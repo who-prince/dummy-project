@@ -17,6 +17,23 @@ body {
   height: 90vh;
   width: 30vw;
   outline: 2px solid white;
+  box-shadow: 0 0 35px .5px #fefefe;
+  outline-offset: -1rem;
+  border-radius: 2rem;
+
+  & h1{
+    color: #fefefe;
+    font-size: 2rem;
+  }
+
+  & button{
+    width: 40%;
+    height: 3rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    cursor: pointer;
+  }
 
   & form {
     height: 100%;
@@ -27,11 +44,20 @@ body {
     flex-direction: column;
 
     & .input{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         gap: 3rem;
+
+        & input{
+          height: 3rem;
+          width: 80%;
+          border-radius: .5rem;
+          padding:1rem;
+
+        }
     }
   }
 }
